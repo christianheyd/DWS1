@@ -1,0 +1,37 @@
+/*I picked these colors using Adobe Kuler. The color scheme just seemed appealing to me.*/
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#FFD9AC;
+	color:black;
+}
+
+h1{
+	background-color:rgb(60,130,161);
+	color:hsl(198,42%,93%);
+	text-align:center;
+	border-radius:4px;
+	padding:10px;
+}
+
+h2{
+	background-color:hsla(32,52%,63%,1);
+	color:rgba(60,130,161,1);
+	text-align:center;
+	border-radius: 4px;
+	padding:10px;
+}
+
+h3{
+	color:#A17A4C;
+}
+
+ul{
+	background-color:#D9B892;
+	color:#000000;
+	border-radius: 4px;
+	padding: 20px 50px 20px 50px;
+}
+
+
+
