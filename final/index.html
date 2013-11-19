@@ -8,11 +8,13 @@
 </head>
 <body>
 <div id="modal">
+<!-- Modal window -->
   <div> WE'RE ALWAYS OPEN!<br>
     <a href="#" onClick="modal()">Close</a> </div>
 </div>
-<header> </header>
+<header><!-- Blank header for logo image. CSS uses negative margin, which displaces navigation. --> </header>
 <nav id="nav">
+<!-- Navigation -->
   <ul>
     <li><a href="#menu">Menu</a></li>
     <li><a href="#loc">Location</a></li>
@@ -21,8 +23,10 @@
   </ul>
 </nav>
 <div class="content">
+  <!-- Main page content -->
   <h1>Super Pizza by Super Plumbers!</h1>
   <section id="history">
+  	<!--History-->
     <h2>Our History</h2>
     <aside>
       <figure> <img alt="M &amp; L's Super Pizza World" src="img/cafe_front.jpg" />
@@ -33,6 +37,7 @@
     <p>Setting up shop in beautiful Winter Park, FL, the brothers have honed their craft, using only the finest ingredients and making all of their menu items in house when possible. If you're in need of a power-up, you've come to the right place!</p>
   </section>
   <section id="loc">
+  	<!--Location-->
     <h2>Location</h2>
     <div class="left"> <strong><abbr title="Mario &amp; Luigi's">M &amp; L's</abbr> Super Pizza World</strong>
       <address>
@@ -47,6 +52,7 @@
       407-678-0070 </div>
   </section>
   <section id="menu">
+  	<!--Menu-->
     <h2>Menu</h2>
     <p>Here's what you came here for! Choose from our <strong><em>ridiculously</em> large</strong> menu of pizza and appetizers!</p>
     <h3>Appetizers</h3>
@@ -108,6 +114,7 @@
     </table>
   </section>
   <section>
+  	<!--Comment form-->
     <h2 id="comment">Questions or Comments?</h2>
     <form onSubmit="Javascript:modal()">
       <textarea placeholder="Enter comments here" cols="80" rows="10"></textarea>
