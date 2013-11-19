@@ -6,14 +6,17 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
 <body>
+<div id="modal">
+  <div> WE'RE ALWAYS OPEN!<br>
+    <a href="#" onClick="modal()">Close</a> </div>
+</div>
 <header> </header>
-<nav>
+<nav id="nav">
   <ul>
     <li><a href="#menu">Menu</a></li>
     <li><a href="#loc">Location</a></li>
-    <li><a href="#order">Order</a></li>
+    <li><a href="#comment">Contact</a></li>
     <li><a href="#history">History</a></li>
   </ul>
 </nav>
@@ -30,13 +33,13 @@
     <p>Setting up shop in beautiful Winter Park, FL, the brothers have honed their craft, using only the finest ingredients and making all of their menu items in house when possible. If you're in need of a power-up, you've come to the right place!</p>
   </section>
   <section id="loc">
-    <h2>Location &amp; Contact</h2>
-    <div class="left"> <strong> M &amp; L's Super Pizza World</strong>
+    <h2>Location</h2>
+    <div class="left"> <strong><abbr title="Mario &amp; Luigi's">M &amp; L's</abbr> Super Pizza World</strong>
       <address>
       3300 University Boulevard<br>
       Winter Park, Florida 32792
       </address>
-    </div>
+      <a id="linkbtn" href="#" onClick="modal()">Show Store Hours</a> </div>
     <div class="right"> <strong class="phone">Phone:</strong><br>
       1-800-226-7625<br>
       407-679-6333<br>
@@ -71,34 +74,83 @@
       <li>Pick your toppings!</li>
       <li>Wait!</li>
     </ol>
-    <div class="left3">
-      <h4>Sizes</h4>
-      <ul>
-        <li>12" -- $8.99</li>
-        <li>14" -- $10.99</li>
-        <li>16" -- $13.99</li>
-      </ul>
-    </div>
-    <div class="mid3">
-      <h4>Crusts</h4>
-      <ul>
-        <li>Thin</li>
-        <li>Pan</li>
-        <li>Stuffed Crust</li>
-        <li>Hand Tossed</li>
-      </ul>
-    </div>
-    <div class="right3">
-      <h4>Toppings</h4>
-      <ul>
-        <li>Koopa Pepperoni</li>
-        <li>Goomba Sausage</li>
-        <li>Fresh Fish from Water Levels</li>
-        <li>Cactus</li>
-        <li>Bom-omb</li>
-      </ul>
-    </div>
+    <table>
+      <tr class="even">
+        <th>Sizes</th>
+        <th>Crusts</th>
+        <th>Toppings</th>
+      </tr>
+      <tr>
+        <td>12" -- $8.99</td>
+        <td>Thin</td>
+        <td>Koopa Pepperoni</td>
+      </tr>
+      <tr class="even">
+        <td>14" -- $10.99</td>
+        <td>Pan</td>
+        <td>Goomba Sausage</td>
+      </tr>
+      <tr>
+        <td>16" -- $13.99</td>
+        <td>Stuffed Crust</td>
+        <td>Fresh Fish from Water Levels</td>
+      </tr>
+      <tr class="even">
+        <td>&nbsp;</td>
+        <td>Hand Tossed</td>
+        <td>Cactus</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>Bom-omb</td>
+      </tr>
+    </table>
   </section>
+  <section>
+    <h2 id="comment">Questions or Comments?</h2>
+    <form onSubmit="Javascript:modal()">
+      <textarea placeholder="Enter comments here" cols="80" rows="10"></textarea>
+      <br>
+      <input class="textinput" type="text" required placeholder="Name">
+      <input class="textinput" type="email" required placeholder="Email Address">
+      <p>How would you rate your experience with us?</p>
+      <select>
+        <option>5</option>
+        <option>4</option>
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+      </select>
+      <p>Would you reccommend us to your friends?</p>
+      <label>Yes
+        <input type="radio" name="rgroup" checked>
+      </label>
+      <label>No
+        <input type="radio" name="rgroup">
+      </label>
+      <br>
+      <button>Submit</button>
+    </form>
+  </section>
+  <blockquote>"Hello... It'sa' me you're looking for?"<br>
+    -- Mario</blockquote>
+  <footer>
+    <h6>Mario and Luigi owned by Nintendo. No ownership intended or implied.</h6>
+    <a href="#nav">Back to top</a> 
+    <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p></footer>
+  <script type="text/javascript">
+  function modal() {
+	el = document.getElementById("modal");
+	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+  }
+  </script> 
 </div>
 </body>
 </html>
