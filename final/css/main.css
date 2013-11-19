@@ -1,0 +1,105 @@
+body {
+	width: 960px;
+	background: url(../img/bg.gif);
+	margin: 10px auto;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+header {
+	background: url(../img/header.png) no-repeat;
+	width: 960px;
+	height: 140px;
+	margin: 0px;
+}
+.content {
+	background: #ECECEC;
+	padding: 25px;
+	margin-top: 10px;
+	overflow: auto;
+}
+nav {
+	background: linear-gradient(to bottom, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+	padding: 5px;
+	margin-top: -20px;
+	border-radius: 8px;
+	/*box-shadow: 2px 2px 8px #666;*/
+}
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 0px 85px;
+}
+nav a {
+	color: #000;
+	text-shadow: -2px 2px 1px rgba(150, 150, 150, 0.69);
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+figure {
+	margin: 0px 0px 10px 10px;
+	float: right;
+	clear: right;
+	border: 1px solid #000;
+	padding: 10px;
+	text-align: center;
+}
+#loc {
+	overflow: auto;
+}
+.left {
+	float: left;
+	clear: left;
+	width: 45%;
+	margin-right: 2.5%;
+}
+.right {
+	float: right;
+	clear: right;
+	width: 45%;
+	margin-left: 2.5%;
+}
+
+.phone{
+	background: url(../img/phone.png) no-repeat left;
+	padding-left:26px;
+	margin-bottom: 3px;
+}
+.fax{
+	background: url(../img/fax.png) no-repeat left;
+	padding-left:29px;
+	margin-bottom: 3px;
+}
+
+ol{
+	padding-left: 20px;
+	font-size:11px;
+	font-weight:800;
+}
+
+
+.left3 {
+	float: left;
+	width: 33%;
+}
+.right3 {
+	float: left;
+	width: 33%;
+	clear: right;
+}
+
+.mid3 {
+	float: left;
+	width: 33%;
+}
+
+ul{
+	list-style:circle;
+	padding-left: 25px;
+}
+
+#meat{
+	font-size:11px;
+	font-style:italic;
+}
+
+
